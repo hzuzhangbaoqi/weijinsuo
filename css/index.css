@@ -297,6 +297,12 @@ fieldset[disabled] .wjs_nav .btn-link:focus {
 	width: 100%;
 	overflow: hidden;
 }
+ul.wjs_product_tabs{
+	width: 500%;
+}
+ul.wjs_product_tabs li{
+	float: left;
+}
 .product_box{
 	display: block;
 	height: 150px;

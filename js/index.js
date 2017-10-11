@@ -1,5 +1,5 @@
 $(function(){
-	
+
 	$(window).on("resize",function(){
 		var width=$(window).width();
 		if(width<768){
@@ -84,7 +84,20 @@ $(function(){
 			
 	}).trigger("resize");
 	
+	function initProduct(){
+	var $parent = $('.wjs_product_tabs_parent');
+	var $ul = $parent.find('ul');
+	var $lis = $ul.find('li');
+	var sum = 0;
+	$lis.each(function(index,item){
+		//width():取得的是内容的宽度
+		//innerWidth():取得的是内容和padding的宽度
+		sum+=$(item).innerWidth();
+	})
+	$ul.width(sum);
+	//上次做jd的移动端的时候让大家把首页横向滑动做成插件，在这里就可以使用
 	
-	
+}
+	initProduct();
 })
 
