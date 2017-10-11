@@ -47,7 +47,8 @@ a:active{
 	content:"\e920";
 	color:#e92322;
 	font-size:50px;
-	vertical-align: middle;	
+	vertical-align: middle;
+	
 }
 .wjs_icon_word::before{
 	content:"\e93e";
@@ -56,8 +57,15 @@ a:active{
 }
 .wjs_icon_e903::before{
 	content: "\e903";
+	font-size: 30px;
+}
+.wjs_icon_e906::before{
+	content: "\e906";
 	font-size: 24px;
-	vertical-align: middle;
+}
+.wjs_icon_e905::before{
+	content: "\e905";
+	font-size: 24px;
 }
 /*wjs_topBar:顶部通栏开始*/
 .wjs_topBar{
@@ -82,6 +90,7 @@ a:active{
 	top:40px;
 	left:50%;
 	margin-left:-60px;	
+	
 }
 .wjs_topBar img{
 	display: none;
@@ -98,3 +107,255 @@ a:active{
 /*wjs_nav:导航栏开始*/
 /*没有上下边框，所有背景变白色，a的hover有红色下划线*/
 
+.wjs_nav {
+  background-color: #fff;
+  border:none;
+  margin-bottom:0px;
+}
+.wjs_nav .navbar-brand {
+  color: #777;
+}
+.wjs_nav .navbar-brand:hover,
+.wjs_nav .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs_nav .navbar-text {
+  color: #777;
+}
+.wjs_nav .navbar-nav > li > a {
+  color: #777;
+  border:3px solid transparent;
+}
+.wjs_nav .navbar-nav > li > a:hover,
+.wjs_nav .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom:3px solid #e92322;
+}
+.wjs_nav .navbar-nav > .active > a,
+.wjs_nav .navbar-nav > .active > a:hover,
+.wjs_nav .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.wjs_nav .navbar-nav > .disabled > a,
+.wjs_nav .navbar-nav > .disabled > a:hover,
+.wjs_nav .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wjs_nav .navbar-toggle {
+  border-color: #ddd;
+}
+.wjs_nav .navbar-toggle:hover,
+.wjs_nav .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs_nav .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs_nav .navbar-collapse,
+.wjs_nav .navbar-form {
+  border-color: #e7e7e7;
+}
+@media screen and (max-width: 768px) {
+	.wjs_nav .navbar-collapse,
+	.wjs_nav .navbar-form {
+	  border-color: #e7e7e7;
+	  background: #fff;
+	  position: absolute;
+	  width: 100%;
+	  z-index:1;  
+	}
+	  
+}
+.wjs_nav .navbar-nav > .open > a,
+.wjs_nav .navbar-nav > .open > a:hover,
+.wjs_nav .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .wjs_nav .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .wjs_nav .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wjs_nav .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a,
+  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.wjs_nav .navbar-link {
+  color: #777;
+}
+.wjs_nav .navbar-link:hover {
+  color: #333;
+}
+.wjs_nav .btn-link {
+  color: #777;
+}
+.wjs_nav .btn-link:hover,
+.wjs_nav .btn-link:focus {
+  color: #333;
+}
+.wjs_nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs_nav .btn-link:hover,
+.wjs_nav .btn-link[disabled]:focus,
+fieldset[disabled] .wjs_nav .btn-link:focus {
+  color: #ccc;
+}
+/*wjs_nav导航栏结束*/
+/*wjs_banner:轮播图开始*/
+.wjs_banner .big{
+	display: block;
+	height: 410px;	
+	background-repeat:no-repeat ;
+	background-size:cover;
+	background-position:center center;	
+}
+.wjs_banner .small{
+	display: block;
+	width: 100%;
+}
+.wjs_banner .small img{
+	width: 100%;
+}
+/*wjs_banner:轮播图结束*/
+
+/*交易信息开始*/
+.wjs_info{
+	padding: 50px;
+	border: 1px solid #CCCCCC;
+}
+.wjs_info>.container>.row>div>a{
+	display: block;
+	padding:15px;
+}
+@media screen and (min-width:1200px) {
+	.wjs_info>.container{
+		width:970px;
+	}
+}
+/*交易信息结束*/
+
+/*wjs交易预约部分开始*/
+.wjs_book{
+	padding: 10px 0;
+}
+.wjs_book .book_link{
+	color: #E92322;
+	border-bottom: 1px dashed #E92322;
+}
+@media screen and (min-width:1200px) {
+	.wjs_book>.container{
+		width:910px;
+	}
+}
+/*wjs交易预约部分结束*/
+
+
+/*product开始*/
+
+.wjs_product{
+	background: #F5F5F5;
+	padding: 30px 0;
+}
+
+
+.wjs_product_tabs {
+  border-bottom: 1px solid #ddd;
+}
+.wjs_product_tabs > li {
+  float: left;
+  margin-bottom: -1px;
+  padding-left: 20px;
+}
+.wjs_product_tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border:none;
+  
+  border-bottom: 3px solid transparent;
+}
+.wjs_product_tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+  background: #F5F5F5;
+  border-bottom: 3px solid #E92322;
+}
+.wjs_product_tabs > li.active > a,
+.wjs_product_tabs > li.active > a:hover,
+.wjs_product_tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #F5F5F5;
+  border:none;
+  border-bottom: 3px solid #E92322;
+}
+.wjs_product_tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs_product_tabs.nav-justified > li {
+  float: none;
+}
+.wjs_product_tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs_product_tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs_product_tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs_product_tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs_product_tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs_product_tabs.nav-justified > .active > a,
+.wjs_product_tabs.nav-justified > .active > a:hover,
+.wjs_product_tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs_product_tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs_product_tabs.nav-justified > .active > a,
+  .wjs_product_tabs.nav-justified > .active > a:hover,
+  .wjs_product_tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}	
+
+.wjs_product_tab-content > .tab-pane {
+  display: none;
+  visibility: hidden;
+}
+.wjs_product_tab-content > .active {
+  display: block;
+  visibility: visible;
+}
+
+/*product结束*/
