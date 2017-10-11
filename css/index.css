@@ -88,9 +88,18 @@ a:active{
 	border:1px solid #e92322;
 	color:#fff;
 }
+.wjs_topBar .btn_register{
+	color: #FFFFFF!important;
+}
 /*wjs_topBar:顶部通栏结束*/
 /*wjs_nav:导航栏开始*/
 /*没有上下边框，所有背景变白色，a的hover有红色下划线*/
+.affix{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
 .wjs_nav {
   background-color: #fff;
   border:none;
@@ -142,6 +151,18 @@ a:active{
 .wjs_nav .navbar-collapse,
 .wjs_nav .navbar-form {
   border-color: #e7e7e7;
+  
+}
+@media screen and (max-width: 768px) {
+	.wjs_nav .navbar-collapse,
+	.wjs_nav .navbar-form {
+	  border-color: #e7e7e7;
+	  background: #fff;
+	  position: absolute;
+	  width: 100%;
+	  z-index:1;  
+	}
+	  
 }
 .wjs_nav .navbar-nav > .open > a,
 .wjs_nav .navbar-nav > .open > a:hover,
