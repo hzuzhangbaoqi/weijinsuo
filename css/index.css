@@ -47,12 +47,16 @@ a:active{
 	content:"\e920";
 	color:#e92322;
 	font-size:50px;
-	vertical-align: middle;
-	
+	vertical-align: middle;	
 }
 .wjs_icon_word::before{
 	content:"\e93e";
 	font-size:36px;
+	vertical-align: middle;
+}
+.wjs_icon_e903::before{
+	content: "\e903";
+	font-size: 24px;
 	vertical-align: middle;
 }
 /*wjs_topBar:顶部通栏开始*/
@@ -78,7 +82,6 @@ a:active{
 	top:40px;
 	left:50%;
 	margin-left:-60px;	
-	
 }
 .wjs_topBar img{
 	display: none;
@@ -94,137 +97,4 @@ a:active{
 /*wjs_topBar:顶部通栏结束*/
 /*wjs_nav:导航栏开始*/
 /*没有上下边框，所有背景变白色，a的hover有红色下划线*/
-.affix{
-	top: 0;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-}
-.wjs_nav {
-  background-color: #fff;
-  border:none;
-  margin-bottom:0px;
-}
-.wjs_nav .navbar-brand {
-  color: #777;
-}
-.wjs_nav .navbar-brand:hover,
-.wjs_nav .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
-}
-.wjs_nav .navbar-text {
-  color: #777;
-}
-.wjs_nav .navbar-nav > li > a {
-  color: #777;
-  border:3px solid transparent;
-}
-.wjs_nav .navbar-nav > li > a:hover,
-.wjs_nav .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
-  border-bottom:3px solid #e92322;
-}
-.wjs_nav .navbar-nav > .active > a,
-.wjs_nav .navbar-nav > .active > a:hover,
-.wjs_nav .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
-}
-.wjs_nav .navbar-nav > .disabled > a,
-.wjs_nav .navbar-nav > .disabled > a:hover,
-.wjs_nav .navbar-nav > .disabled > a:focus {
-  color: #ccc;
-  background-color: transparent;
-}
-.wjs_nav .navbar-toggle {
-  border-color: #ddd;
-}
-.wjs_nav .navbar-toggle:hover,
-.wjs_nav .navbar-toggle:focus {
-  background-color: #ddd;
-}
-.wjs_nav .navbar-toggle .icon-bar {
-  background-color: #888;
-}
-.wjs_nav .navbar-collapse,
-.wjs_nav .navbar-form {
-  border-color: #e7e7e7;
-  
-}
-@media screen and (max-width: 768px) {
-	.wjs_nav .navbar-collapse,
-	.wjs_nav .navbar-form {
-	  border-color: #e7e7e7;
-	  background: #fff;
-	  position: absolute;
-	  width: 100%;
-	  z-index:1;  
-	}
-	  
-}
-.wjs_nav .navbar-nav > .open > a,
-.wjs_nav .navbar-nav > .open > a:hover,
-.wjs_nav .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
-}
-@media (max-width: 767px) {
-  .wjs_nav .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
-  }
-  .wjs_nav .navbar-nav .open .dropdown-menu > li > a:hover,
-  .wjs_nav .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
-    background-color: transparent;
-  }
-  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a,
-  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
-  }
-  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a,
-  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
-    background-color: transparent;
-  }
-}
-.wjs_nav .navbar-link {
-  color: #777;
-}
-.wjs_nav .navbar-link:hover {
-  color: #333;
-}
-.wjs_nav .btn-link {
-  color: #777;
-}
-.wjs_nav .btn-link:hover,
-.wjs_nav .btn-link:focus {
-  color: #333;
-}
-.wjs_nav .btn-link[disabled]:hover,
-fieldset[disabled] .wjs_nav .btn-link:hover,
-.wjs_nav .btn-link[disabled]:focus,
-fieldset[disabled] .wjs_nav .btn-link:focus {
-  color: #ccc;
-}
-/*wjs_nav导航栏结束*/
-/*wjs_banner:轮播图开始*/
-.wjs_banner .big{
-	display: block;
-	height: 410px;	
-	background-repeat:no-repeat ;
-	background-size:cover;
-	background-position:center center;	
-}
-.wjs_banner .small{
-	display: block;
-	width: 100%;
-}
-.wjs_banner .small img{
-	width: 100%;
-}
-/*wjs_banner:轮播图结束*/
+
